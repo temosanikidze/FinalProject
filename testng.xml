@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Final Project Suite" verbose="1" thread-count="8" >
+
+    <test name="TestSuite_MyCart"  parallel="tests">
+        <classes>
+            <class name="AddToMyCartTest" />
+            <class name="DeleteFromCartTest"/>
+        </classes>
+    </test>
+
+    <test name="TestSuite_RegistrationTests" parallel="tests">
+        <classes>
+            <class name="RegistrationPageErrorTest"/>
+            <class name="RegistrationPageTest"/>
+        </classes>
+    </test>
+
+    <test name="TestSuite_Categories"  parallel="tests">
+        <classes>
+            <class name="CategoriesTest" />
+            <class name="SubCategoriesTest" />
+        </classes>
+    </test>
+
+</suite>
